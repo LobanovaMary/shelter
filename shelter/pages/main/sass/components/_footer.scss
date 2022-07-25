@@ -1,0 +1,109 @@
+.footer {
+  background: $color-footer-bg;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+
+    @media only screen and (max-width: 1279px) {
+      justify-content: center;
+      row-gap: 22px;
+      column-gap: 54px;
+      flex-wrap: wrap;
+    }
+    @media only screen and (max-width: 766px) {
+      align-items: center;
+      flex-direction: column;
+      row-gap: 0px;
+    }
+  }
+
+  &__contact,
+  &__location {
+    margin-top: 16px;
+    width: 298px;
+    @media only screen and (max-width: 1279px) {
+      margin-top: 2px;
+    }
+    @media only screen and (max-width: 766px) {
+      margin-top: 0px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+
+  &__contact > * {
+    margin-bottom: 40px;
+    margin-left: 10px;
+  }
+
+  &__location > * {
+    margin-bottom: 32px;
+    @media only screen and (max-width: 766px) {
+      margin-bottom: 40px;
+      align-self: flex-start;
+    }
+  }
+
+  &__title {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: $color-white;
+    display: inline-block;
+
+    @media only screen and (max-width: 766px) {
+      font-size: 25px;
+      text-align: center;
+      align-self: center;
+      width: 270px;
+    }
+  }
+
+  &__item {
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    text-decoration: none;
+
+    &-content {
+      font-family: 'Georgia';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 115%;
+      letter-spacing: 0.06em;
+      color: $color-btn;
+      padding-left: 20px;
+      transition: all 0.3s;
+    }
+
+    &-marker {
+      width: 21px;
+      height: 32px;
+    }
+
+    &:hover > p {
+      color: $color-grey-light;
+    }
+  }
+
+  &__img {
+    width: 300px;
+    height: 310px;
+    @media only screen and (max-width: 1279px) {
+      margin: auto;
+    }
+    @media only screen and (max-width: 766px) {
+      width: 260px;
+      height: 269px;
+    }
+  }
+}

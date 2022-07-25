@@ -1,0 +1,59 @@
+.container {
+  width: 1200px;
+  margin: auto;
+  @media only screen and (max-width: 1279px) {
+    width: 100%;
+  }
+}
+
+.header {
+  padding: 60px 40px 0px 40px;
+  display: flex;
+  flex-direction: column;
+  @media only screen and (max-width: 1279px) {
+    padding: 30px 30px 0px 30px;
+  }
+  @media only screen and (max-width: 766px) {
+    padding: 30px 10px 0px 10px;
+  }
+}
+
+.about {
+  padding: 80px 40px 100px 40px;
+  @media only screen and (max-width: 766px) {
+    padding: 42px 25px;
+  }
+}
+.pets {
+  padding: 80px 40px 100px 40px;
+  @media only screen and (max-width: 1279px) {
+    padding: 80px 30px 100px 30px;
+  }
+  @media only screen and (max-width: 766px) {
+    padding: 42px 10px;
+  }
+}
+.help {
+  padding: 80px 7px 100px 7px;
+  @media only screen and (max-width: 1279px) {
+    padding: 80px 69px 100px 69px;
+  }
+  @media only screen and (max-width: 766px) {
+    padding: 42px 15px;
+  }
+}
+.donation {
+  padding: 80px 40px 100px 40px;
+  @media only screen and (max-width: 766px) {
+    padding: 42px 20px;
+  }
+}
+.footer {
+  padding: 40px 38px 0px 22px;
+  @media only screen and (max-width: 1279px) {
+    padding: 30px 56px 0px 54px;
+  }
+  @media only screen and (max-width: 766px) {
+    padding: 30px 10px 0px 10px;
+  }
+}

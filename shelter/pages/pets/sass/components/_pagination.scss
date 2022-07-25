@@ -1,0 +1,57 @@
+.pagination {
+  &__controls {
+    width: 52px;
+    height: 52px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+
+    box-sizing: border-box;
+    border-radius: 100px;
+    position: relative;
+
+    &--active {
+      border: 2px solid $color-btn;
+      color: $color-dark-3;
+      transition: all 0.4s;
+
+      &:hover {
+        cursor: pointer;
+        border: 2px solid $color-btn-light;
+        background: $color-btn-light;
+      }
+    }
+
+    &--not-active {
+      border: 2px solid $color-dark-light;
+      color: $color-dark-light;
+      transition: all 0.4s;
+
+      &:hover {
+        cursor: not-allowed;
+        background: inherit;
+        border: 2px solid $color-dark-light;
+      }
+    }
+
+    & > * {
+      position: absolute;
+      top: 46%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__counter {
+    border: 2px solid $color-btn;
+    background: $color-btn;
+    transition: all 0.4s;
+  }
+}
+
+.counter {
+  color: $color-dark-3;
+}
