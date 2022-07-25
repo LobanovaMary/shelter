@@ -1,0 +1,189 @@
+.pets {
+  background-color: $color-grey-light;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__title {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: $color-dark-1;
+    text-align: center;
+    @media only screen and (max-width: 766px) {
+      font-size: 25px;
+      text-align: center;
+    }
+  }
+
+  &__slider {
+    width: 1200px;
+    height: 435px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 60px 0px;
+    @media only screen and (max-width: 1279px) {
+      width: 100%;
+      justify-content: center;
+      gap: 12px;
+    }
+    @media only screen and (max-width: 766px) {
+      position: relative;
+      margin: 42px 0px 115px 0px;
+    }
+
+    &-content {
+      position: relative;
+      left: -1080px;
+      width: 980px;
+      height: 435px;
+      display: flex;
+      justify-content: flex-start;
+      column-gap: 87px;
+      @media only screen and (max-width: 1279px) {
+        width: 580px;
+        left: -620px;
+        column-gap: 40px;
+      }
+      @media only screen and (max-width: 766px) {
+        left: -310px;
+        width: 300px;
+        margin-left: 15px;
+        height: 435px;
+      }
+
+      &-wrapper {
+        overflow: hidden;
+      }
+    }
+
+    &-btn {
+      width: 52px;
+      height: 52px;
+      position: relative;
+      background-color: inherit;
+      @media only screen and (max-width: 766px) {
+        position: absolute;
+        bottom: -72px;
+      }
+      &-left {
+        @media only screen and (max-width: 766px) {
+          left: auto;
+          margin-right: 132px;
+        }
+      }
+
+      &-left::after {
+        content: '';
+        width: 14px;
+        height: 6px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background-image: url(./../../assets/icons/Arrow-left.svg);
+        transform: translate(-50%, -50%);
+      }
+
+      &-right {
+        @media only screen and (max-width: 766px) {
+          right: auto;
+          margin-left: 132px;
+        }
+      }
+      &-right::after {
+        content: '';
+        width: 14px;
+        height: 6px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background-image: url(./../../assets/icons/Arrow-right.svg);
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
+
+@keyframes move-right {
+  from {
+    left: -1080px;
+  }
+  to {
+    left: -2160px;
+  }
+}
+@keyframes move-right-middle {
+  from {
+    left: -620px;
+  }
+  to {
+    left: -1240px;
+  }
+}
+@keyframes move-right-small {
+  from {
+    left: -310px;
+  }
+  to {
+    left: -620px;
+  }
+}
+
+.transition-right {
+  animation-name: move-right;
+  animation-duration: 2s;
+  @media only screen and (max-width: 1279px) {
+    animation-name: move-right-middle;
+    animation-duration: 1.5s;
+  }
+  @media only screen and (max-width: 766px) {
+    animation-name: move-right-small;
+    animation-duration: 1s;
+  }
+}
+
+@keyframes move-left {
+  from {
+    left: -1080px;
+  }
+  to {
+    left: -0px;
+  }
+}
+@keyframes move-left-middle {
+  from {
+    left: -620px;
+  }
+  to {
+    left: -0px;
+  }
+}
+@keyframes move-left-small {
+  from {
+    left: -310px;
+  }
+  to {
+    left: -0px;
+  }
+}
+
+.transition-left {
+  animation-name: move-left;
+  animation-duration: 2s;
+  @media only screen and (max-width: 1279px) {
+    animation-name: move-left-middle;
+    animation-duration: 1.5s;
+  }
+  @media only screen and (max-width: 766px) {
+    animation-name: move-left-small;
+    animation-duration: 1s;
+  }
+}

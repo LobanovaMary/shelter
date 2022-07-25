@@ -1,0 +1,50 @@
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-decoration: none;
+
+  &:visited,
+  &:active,
+  &:focus {
+    text-decoration: none;
+  }
+
+  &__title {
+    font-family: 'Georgia';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 110%;
+    color: $color-primary;
+    letter-spacing: 0.06em;
+    margin-bottom: 10px;
+  }
+
+  &__subtitle {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: $color-white;
+    letter-spacing: 0.1em;
+    padding-left: 4px;
+  }
+}
+
+.logo-hide {
+  opacity: 0;
+}
+.burger-logo {
+  position: absolute;
+  top: 20px;
+  right: 126px;
+  z-index: 15;
+  opacity: 1;
+}
+.burger-logo > .logo__title {
+  color: $color-primary;
+}
+.burger-logo > .logo__subtitle {
+  color: $color-white;
+}

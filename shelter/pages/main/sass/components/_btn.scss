@@ -1,0 +1,55 @@
+.btn {
+  display: inline-block;
+  padding: 15px 45px;
+  border-radius: 100px;
+  background: $color-btn;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  color: $color-dark-3;
+  transition: all 0.3s;
+
+  &:hover {
+    background: $color-btn-light;
+  }
+}
+
+.btn-secondary {
+  display: inline-block;
+  border: 2px solid $color-btn;
+  border-radius: 100px;
+  transition: all 0.3s;
+
+  &:hover {
+    cursor: pointer;
+    border: 2px solid $color-btn-light;
+    background: $color-btn-light;
+  }
+}
+a.btn-secondary {
+  padding: 15px 45px;
+  text-decoration: none;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: $color-dark-3;
+}
+.btn-secondary--not-fill {
+  padding: 15px 45px;
+  text-decoration: none;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: $color-dark-3;
+  background-color: inherit;
+}

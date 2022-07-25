@@ -1,0 +1,15 @@
+{
+  "name": "shelter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "startMain": "sass pages/main/sass/main.scss pages/main/style.css -w",
+    "startPets": "sass pages/pets/sass/main.scss pages/pets/style.css -w"
+  },
+  "author": "Lobanova Maria",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.49.9"
+  }
+}

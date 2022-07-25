@@ -1,0 +1,36 @@
+.container {
+  position: relative;
+  width: 1200px;
+  margin: auto;
+  @media only screen and (max-width: 1279px) {
+    width: 100%;
+  }
+}
+
+.header {
+  padding: 30px 40px;
+  @media only screen and (max-width: 1279px) {
+    padding: 30px;
+  }
+  @media only screen and (max-width: 766px) {
+    padding: 30px 10px;
+  }
+}
+.pets {
+  padding: 80px 40px 100px 40px;
+  @media only screen and (max-width: 1279px) {
+    padding: 80px 40px 76px 40px;
+  }
+  @media only screen and (max-width: 766px) {
+    padding: 42px 10px;
+  }
+}
+.footer {
+  padding: 40px 38px 0px 22px;
+  @media only screen and (max-width: 1279px) {
+    padding: 28px 56px 0px 54px;
+  }
+  @media only screen and (max-width: 766px) {
+    padding: 30px 13px 0px 13px;
+  }
+}
