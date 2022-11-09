@@ -1,6 +1,6 @@
 # shelter
 
-![main-page](https://github.com/LobanovaMary/shelter/blob/main/shelter/assets/main-page.gif)
+![main-page](https://github.com/LobanovaMary/shelter/blob/main/shelter/assets/mainPage.gif)
 
 Shelter - это проект, состоящий из двух страниц, по макету из [Figma](https://www.figma.com/file/tKcmzkARtMUFQAR9VLdLkl/shelter-dom?node-id=94%3A43). Использована методология БЭМ и препроцессор SASS. Каждый из питомцев представлен объектом JSON и генирируется с помощью JS.
 
